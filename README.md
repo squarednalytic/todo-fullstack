@@ -51,26 +51,50 @@ Aplikasi Todo full-stack dengan backend NestJS dan frontend React.
    3. Interceptor untuk request/response
    4. Dukungan TypeScript yang baik
 
-   ### 3. Struktur Folder
-   backend/
+### 3. Struktur Folder
+
+```text
+backend/
 ├── src/
-│   ├── todo/          # Modul todo dengan DTO, entity, controller, service
-│   └── main.ts        # Entry point aplikasi
+│   ├── todo/          # Modul todo (DTO, entity, controller, service)
+│   └── main.ts        # Entry point aplikasi NestJS
+
 frontend/
 ├── src/
-│   ├── App.tsx        # Komponen utama
+│   ├── App.tsx        # Komponen utama React
 │   ├── App.css        # Styling utama
 │   └── index.tsx      # Entry point React
 
-      ### 📋 Fitur
 
-    ✅ CRUD operations untuk todo
-    ✅ Live search
-    ✅ Toggle completion status
-    ✅ Error handling
-    ✅ Loading states
-    ✅ Responsive UI
-    ✅ CORS enabled
+📋 Fitur
+
+✅ CRUD operations untuk todo
+
+✅ Live search
+
+✅ Toggle completion status
+
+✅ Error handling
+
+✅ Loading states
+
+✅ Responsive UI
+
+✅ CORS enabled
+
+🔗 API Endpoints
+
+• GET /api/todos
+→ Get all todos
+
+• GET /api/todos?search=
+→ Search todos berdasarkan title
+
+• POST /api/todos
+→ Create new todo
+
+• PATCH /api/todos/:id
+→ Toggle todo completion
 
    
 
