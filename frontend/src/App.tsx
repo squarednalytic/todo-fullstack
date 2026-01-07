@@ -17,7 +17,6 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // Fetch todos
   const fetchTodos = async () => {
     setLoading(true);
     setError(null);
@@ -33,7 +32,6 @@ function App() {
     }
   };
 
-  // Add new todo
   const addTodo = async () => {
     if (!newTodo.trim()) {
       setError('Todo title cannot be empty');
@@ -56,7 +54,6 @@ function App() {
     }
   };
 
-  // Toggle todo completion
   const toggleTodo = async (id: number) => {
     setLoading(true);
     setError(null);
@@ -73,7 +70,6 @@ function App() {
     }
   };
 
-  // Load todos on initial render and when search changes
   useEffect(() => {
     fetchTodos();
   }, [search]);
